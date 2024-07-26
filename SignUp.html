@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup | Medical Care Hospital</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to your external stylesheet -->
+<style>
+/* Additional styles specific to this page if needed */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(to right, #ffffff, #e3f2fd);
+  margin: 0;
+  padding: 0;
+}
+.signup-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.signup-form .error {
+  color: red;
+  font-size: 14px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 250px; /* Adjust the size as needed */
+  height: auto;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+    <div class="logo">
+      <img src="H_Logo.png" alt="Hospital Logo">
+    </div>
+
+<!-- Signup Form -->
+<div class="signup-form">
+  <h2>Sign Up</h2>
+  <form action="signup_process.php" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+    
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" required>
+    
+    <label for="Phone No.">Phone No.</label>
+    <input type="text" id="Phone No." name="Phone No." required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+</body>
+</html>
